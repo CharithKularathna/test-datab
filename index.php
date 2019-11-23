@@ -22,7 +22,7 @@
 ?>
 
 <html lang="en">
-<a href="page2.php">Next</a>
+<a href="src/html/page2.php">Next</a>
 
 
 
