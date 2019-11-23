@@ -5,8 +5,17 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "select name from user";
+    $sql = "select name,email from user";
     $result = $conn->query($sql);
-    echo $result;
+    
+    //Print result
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "id: " . $row["name"]. " email: " . $row["email"];
+        }
+    } else {
+        echo "0 results";
+    }
     
 ?>
