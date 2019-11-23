@@ -5,7 +5,7 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "select name,email from user";
+    $sql = "select name from user";
     $result = $conn->query($sql);
     echo $result;
     
