@@ -1,3 +1,4 @@
+
 <?php
     require('config.php');
     $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -19,3 +20,11 @@
     }
     
 ?>
+
+<html lang="en">
+<a href="page2.php">Next</a>
+
+
+
+
+</html>
