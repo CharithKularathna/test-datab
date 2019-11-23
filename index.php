@@ -7,6 +7,6 @@
     }
     $sql = "select name,email from user";
     $result = $conn->query($sql);
-    echo $sql;
+    echo $result;
     
 ?>
